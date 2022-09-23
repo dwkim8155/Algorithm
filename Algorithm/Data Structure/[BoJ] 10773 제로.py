@@ -1,15 +1,16 @@
-N = int(input())
+N, K = map(int, input().split())
 
-stack = []
+arr = list(map(int, input().split()))
 
-for _ in range(N):
-    num = int(input())
-    if num == 0 :
-        stack.pop()
-    else:
-        stack.append(num)
+arr.sort(reverse=True)
 
-print(sum(stack))
+print(arr[K-1])
+
+
+
+
+
+
 
 
 
