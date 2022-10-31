@@ -10,7 +10,6 @@ def dfs(step):
     if step == M:
         if not sorted(tmp_result) in result:
             result.append(sorted(tmp_result))
-            print(result)
         return
     
     for i in range(N):
