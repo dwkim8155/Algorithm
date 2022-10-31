@@ -16,7 +16,7 @@ def dfs(step):
             result.pop()
     else:
         for i in range(N):
-            if result[-1]<=i:
+            if result[-1]<=arr[i]:
                 result.append(arr[i])
                 dfs(step+1)
                 result.pop()
